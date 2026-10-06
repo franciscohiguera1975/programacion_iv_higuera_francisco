@@ -1,0 +1,97 @@
+# ====================================================================
+# CONFIGURACIÓN GLOBAL MULTI-PROYECTO (.gitignore)
+# Abarca de forma recursiva carpetas y subcarpetas para:
+# Node.js, React Native, Kotlin, Flutter y Dart
+# ====================================================================
+
+# --------------------------------------------------------------------
+# 1. Node.js & React Native (JavaScript / TypeScript)
+# --------------------------------------------------------------------
+**/node_modules/
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/.pnpm-debug.log*
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+**/coverage/
+**/.expo/
+**/.expo-shared/
+**/web-build/
+
+# --------------------------------------------------------------------
+# 2. Flutter & Dart
+# --------------------------------------------------------------------
+**/.dart_tool/
+**/.packages
+**/.pub-cache/
+**/.pub/
+**/build/
+**/pubspec.lock
+# Descomenta la línea de abajo si prefieres NO subir el lockfile de Flutter
+# **/pubspec.lock
+
+# Archivos generados por Flutter Web y herramientas de desarrollo
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/generated_plugin_registrant.dart
+
+# Archivos de cobertura de código en Dart
+**/doc/api/
+**/pubspec_overrides.yaml
+
+# --------------------------------------------------------------------
+# 3. Android (Kotlin / Gradle / Proguard)
+# --------------------------------------------------------------------
+**/.gradle/
+**/local.properties
+**/.android/
+**/captures/
+**/*.apk
+**/*.aab
+**/*.keystore
+**/*.jks
+
+# Archivos específicos de la build de Android y Gradle
+**/build/
+**/intermediates/
+**/outputs/
+**/tmp/
+
+# --------------------------------------------------------------------
+# 4. iOS / macOS (React Native & Flutter / Cocoapods)
+# --------------------------------------------------------------------
+**/Pods/
+**/Podfile.lock
+**/*.moved-aside
+**/*.pbxuser
+**/*.mode1v3
+**/*.mode2v3
+**/*.perspectivev3
+**/DerivedData/
+**/DerivedData*
+**/*.xccheckout
+**/*.xcworkspace/contents.xcworkspacedata
+**/xcuserdata/
+**/Profiles/
+
+# --------------------------------------------------------------------
+# 5. Editores de Código e IDEs (VS Code, Android Studio, IntelliJ)
+# --------------------------------------------------------------------
+# Android Studio e IntelliJ IDEA
+**/.idea/
+**/*.iml
+**/*.ipr
+**/*.iws
+**/out/
+
+# Visual Studio Code
+**/.vscode/
+**/.history/
+
+# Archivos del sistema operativo
+**/.DS_Store
+**/Thumbs.db
